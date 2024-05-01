@@ -40,13 +40,15 @@
           padding: 20px;
         }
 
-        .btn {
-          background-color: #F8F3E7!important;
-          color: #313131!important;
-          border-radius: 25px;
+        .form {
+          text-align: left;
+          padding: 20px;
         }
 
-        
+        .col {
+          padding-bottom: 10px;
+        }
+       
     </style>
 </head>
 
@@ -71,6 +73,9 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="window.location.href='index.html'">Home</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="#" onclick="window.location.href='menu.html'">Todays Menu</a>
                 </li>
                 <li class="nav-item">
@@ -81,50 +86,25 @@
         </nav>
 
         <div class="container">
-            <h1 class="display-3">Here at Green Bean, we care about the planet.</h1>
-            <p>
-                See our menu and become sustainable today!
-            </p>
+            <h1 class="display-3">Reserve a food box</h1>
 
-            <button type="button" class="btn" onclick="window.location.href='menu.html'">Todays Menu</button>
-
-            <hr>
-        </div>
-
-        <div class="container">
-          <h1 class="display-3">Become a Member Today!</h1>
-          <p>
-              Fill out this form to receive exclusive discounts for members only
-          </p>
-
-          <button type="button" class="btn" onclick="window.location.href='member.html'">Become a Member</button>
-
+        <div class="form">
+          <form>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+            </form>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
           <hr>
         </div>
 
-        <div class="container">
-          <h1 class="display-3">Green Bean Food Boxes</h1>
-          <p>
-              View our map to see drop off points for our weekly pay-as-you-feel food boxes!
-          </p>
-          
-          <button type="button" class="btn">Map</button>
-
-        <button type="button" class="btn" onclick="window.location.href='foodbox.html'">Reserve a Food Box</button>
-
-          <hr>
-        </div>
-
-        <div class="container">
-          <h1 class="display-3">About</h1>
-          <p>
-            Founded in 2021, Green Bean is a nonprofit organisation with a passion for our earth. We are working daily to combat food waste in the local area, with aspirations to reach a global scale. Our restaurant is pay as you feel, featuring cost efficient daily menus consisting of
-            diverted fresh food from local supermarkets and distributors. We are targeted towards students and young families in need of a well-priced, healthy meal. Despite this, our door is always open to anyone with a devotion for saving our planet!
-          </p>
-
-          <hr>
-        </div>
-    
         <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
