@@ -19,14 +19,27 @@
         .navbar {
           background-color: #313131;
           color: #F8F3E7;
+          position:fixed;
+          width:100%;
+          z-index: 1000000;
+          top:0;
         }
 
         .nav-link {
           color: #F8F3E7;
         }
 
+        .nav-item1 {
+          padding-right: 50px;
+        }
+
+        .nav-item2 {
+          padding-left: 50px;
+        }
+
         .navbar-toggler {
           color: #F8F3E7;
+          border: none;
         }
 
         .navbar-toggler-icon {
@@ -40,18 +53,24 @@
           padding: 20px;
         }
 
+        .container2-fluid {
+          background-color: #364130;
+          color: #F8F3E7;
+          text-align: center;
+          padding: 20px;
+          padding-top: 100px;
+        }
+
         .btn {
           background-color: #F8F3E7!important;
           color: #313131!important;
           border-radius: 25px;
         }
-
-        
     </style>
 </head>
 
     <body>
-        <nav class="navbar navbar-custom navbar-dark navbar-expand-lg">
+        <nav class="navbar navbar-custom">
             <div class="container-fluid" class="img-fluid" alt="...">
               <a class="navbar-brand" hrefa="#">
                 <img src="images/logo.png" alt="Bootstrap" width="120" onclick="window.location.href='index.html'">
@@ -62,7 +81,7 @@
                 </svg>
               </button>
           
-              <button class="navbar-toggler" type="button" onclick="window.location.href='https://maps.app.goo.gl/85krsBkhXgy5GQ988'" >
+              <button class="navbar-toggler" type="button" onclick="window.location.href='https://www.google.com/maps/@51.4545494,-2.6028464,3a,75y,273.55h,73.19t/data=!3m6!1e1!3m4!1sZIZ7I2JRGPJOjPMXVHtvew!2e0!7i16384!8i8192?coh=205409&entry=ttu'" >
                 <svg xmlns="http://www.w3.org/2000/svg" height="28" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                   <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
                 </svg>
@@ -80,7 +99,7 @@
             </div>
         </nav>
 
-        <div class="container1-fluid">
+        <div class="container2-fluid">
             <h1 class="display-3">Here at Green Bean, we care about the planet.</h1>
             <p>
                 See our menu and become sustainable today!
@@ -124,7 +143,16 @@
 
           <hr>
         </div>
-    
+
+        <div class="container1-fluid">
+          <footer>
+            <ul class="nav justify-content-center">
+              <p class="nav-item1">12345 6789</a></li>
+              <p class="nav-item2">Park Street, Bristol</a></li>
+            </ul>
+          </footer>
+        </div>
+        
         <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
