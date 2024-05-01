@@ -14,24 +14,50 @@
             transform: translateX(-50%);
             left: 50%;
             position: absolute;
-            margin-top: 20px;
         }
 
         .navbar {
+          background-color: #313131;
+          color: #F8F3E7;
+        }
+
+        .nav-link {
+          color: #F8F3E7;
+        }
+
+        .navbar-toggler {
+          color: #F8F3E7;
+        }
+
+        .navbar-toggler-icon {
+          color: #F8F3E7;
+        }
+
+        .container {
           background-color: #364130;
-          color: white;
+          color: #F8F3E7;
+          text-align: center;
+          padding: 20px;
+        }
+
+        .btn {
+          background-color: #F8F3E7;
+          color: #313131;
+          border-radius: 25px;
         }
     </style>
 </head>
 
     <body>
-        <div class="navbar navbar-custom navbar-dark navbar-expand-lg">
+        <nav class="navbar navbar-custom navbar-dark navbar-expand-lg">
             <div class="container-fluid" img src="images/background.png" class="img-fluid" alt="...">
               <a class="navbar-brand" hrefa="#">
                 <img src="images/logo.png" alt="Bootstrap" width="120">
               </a>
-              <button class="navbar-toggler" type="butto n" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
               </button>
           
               <button class="navbar-toggler" type="button" onclick="window.location.href='https://maps.app.goo.gl/85krsBkhXgy5GQ988'" >
@@ -53,19 +79,36 @@
         </nav>
 
         <div class="container">
-            <h1 class="display-1">Here at Green Bean, we care about the planet.</h1>
-
-            <p class="lead">
-                See our menu and become sustainable!
-            </p>
-
+            <h1 class="display-3">Here at Green Bean, we care about the planet.</h1>
             <p>
-                This is a regular paragraph. It doesn't stand out.
+                See our menu and become sustainable today!
             </p>
 
-            <button type="button" class="btn btn-primary">primary button</button>
+            <button type="button" class="btn">Todays Menu</button>
 
             <hr>
+        </div>
+
+        <div class="container">
+          <h1 class="display-3">Become a Member Today!</h1>
+          <p>
+              Fill out this form to receive exclusive discounts for members only
+          </p>
+
+          <button type="button" class="btn">Become a Member</button>
+
+          <hr>
+        </div>
+
+        <div class="container">
+          <h1 class="display-3">Green Bean Food Boxes</h1>
+          <p>
+              View our map to see drop off points for our weekly food boxes!
+          </p>
+
+          <button type="button" class="btn">Map</button>
+
+          <hr>
         </div>
     
         <script src="js/bootstrap.min.js"></script>
